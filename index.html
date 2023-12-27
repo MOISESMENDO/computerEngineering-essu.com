@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>computer engineering</title>
+<link rel="stylesheet" href="css/style.css"/>
+<!--fav-icon-->
+<link rel="shortcut icon" href="images/favicon.png"/>
+<style>
+    /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 400px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+
+    
+<body>
+       <section class="main3" style="background-image: url(images/hero-bg.jpeg); ">
+        
+
+        <nav>
+            <a style="FONT-SIZE:36PX; MARGIN-LEFT:-60PX; COLOR:#42a5f5" class="logo">COMPUTER ENGINEERING</a>
+                <img src="images/logo.jpg" width="100px" style="margin-left:-765px"  />
+            
+    
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu" style="border-radius: 5px;">
+
+              <li><a href="file:///C:/Users/Acer/Documents/html%20moi%20wils/index.html">HOME</a></li>                            
+             <li><a href="file:///C:/Users/Acer/Documents/html%20moi%20wils/studentinfo.html">STUDENT INFO.</a></li>
+             <li><a href="file:///C:/Users/Acer/Documents/html%20moi%20wils/downloadableforms.html">DOWNLOADABLE FORMS</a></li>
+             <li><a href="file:///C:/Users/Acer/Documents/html%20moi%20wils/about.html">About</a></li>
+
+            </ul>
+        </nav>
+       
+        <!-- login modal start -->
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post" style="
+            width: 400px;
+        ">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <p style="font-size: 22px;">Student Login </p>
+                <hr>
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#">Register Here</a></span>
+                <span class="psw" style="margin-right: 11px;"><a href="#">Forgot  password?</a></span>
+              </div>
+            </form>
+          </div>
+         <div class="home-img" style="width: 500px;">>
+                <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Post</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin: 20px auto;
+      background-color: #f8f9fa;
+    }
+    .post-container {
+      width: 650px;
+      opacity:0.9;
+      margin-left:265px;
+      margin-top:100px;
+      background-color: #ffffff;
+      border: 1px solid #d3d3d3;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	
+    }
+    .post-content {
+      padding: 16px;
+      text-align: left;
+
+     
+    }
+    .post-info,
+    .comment-info {
+      display: flex;
+      
+      padding: 5px;
+      color: #6c757d;
+      font-size: 12px;
+      border-top: 1px solid #d3d3d3;
+      background-color: #f8f9fa;
+    }
+    .comment-input {
+      width: calc(100% - 16px);
+      padding:12px;
+      box-align:center;
+      margin-top: 12px;
+      border: 1px solid #d3d3d3;
+      border-radius: 6px;
+      box-sizing: border-box;
+      resize:none;
+      display: flex;
+    }
+    .comment-button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      margin-top: 10px;
+      margin-bottom:10px;
+      border-radius: 6px;
+      cursor: pointer;
+      height:35px;
+    }
+    .image-preview,
+    .video-preview {
+      max-width: 400%;
+      max-height: 200px;
+      margin-top: 12px;
+      border-radius: 6px;
+
+    }
+    .comments {
+      text-align: left;
+    }
+    .comment {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 12px;
+    }
+    .comment-content {
+      flex-grow: 1;
+      background-color: #f8f9fa;
+      border: 1px solid #d3d3d3;
+      border-radius: 6px;
+      padding: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="post-container">
+    <div class="post-content">
+      <textarea id="userInput" placeholder="What's on your mind?" style="width:100%; height:100px; resize:none;"></textarea>
+    </div>
+    <div class="post-info" id="postInfo"></div>
+    <input type="file" id="mediaInput" accept="image/*,video/*">
+    <button class="comment-button" onclick="postMessage()">Post</button>
+  </div>
+
+  <div id="postedMessages"></div>
+
+  <script>
+    function postMessage() {
+      var userInput = document.getElementById('userInput').value.trim();
+
+      // Check if there is no text input and no media selected
+      if (userInput === '' && !document.getElementById('mediaInput').files.length) {
+        alert('Please enter something or select an image or video before posting.');
+        return; // Prevent posting if both input fields are empty
+      }
+
+      // Get the current date and time
+      var currentDate = new Date();
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+      var formattedDateTime = currentDate.toLocaleDateString('en-US', options);
+
+      // Get the selected media file
+      var mediaInput = document.getElementById('mediaInput');
+      var selectedMedia = mediaInput.files[0];
+
+      // Create the posted message
+      var postedMessage = '<div class="post-container">';
+      postedMessage += '<div class="post-info">' + formattedDateTime + '</div>';
+      postedMessage += '<div class="post-content">' + userInput + '</div>';
+      if (selectedMedia) {
+        // Display the selected media (image or video)
+        if (selectedMedia.type.startsWith('image/')) {
+          postedMessage += '<img class="image-preview" alt="Selected Image" src="' + URL.createObjectURL(selectedMedia) + '">';
+        } else if (selectedMedia.type.startsWith('video/')) {
+          postedMessage += '<video class="video-preview" controls>';
+          postedMessage += '<source src="' + URL.createObjectURL(selectedMedia) + '" type="' + selectedMedia.type + '">';
+          postedMessage += 'Your browser does not support the video tag.';
+          postedMessage += '</video>';
+        }
+      }
+      postedMessage += '<div class="comments">';
+      postedMessage += '<textarea class="comment-input" placeholder="Type your comment here..."></textarea>';
+      postedMessage += '<button class="comment-button" onclick="postComment(this)">Comment</button>';
+      postedMessage += '</div>';
+      postedMessage += '</div>';
+
+      // Display the posted message
+      document.getElementById('postedMessages').innerHTML = postedMessage + document.getElementById('postedMessages').innerHTML;
+
+      // Clear the input and media
+      document.getElementById('userInput').value = '';
+      mediaInput.value = '';
+    }
+
+    function postComment(button) {
+      var commentInput = button.parentNode.querySelector('.comment-input').value;
+
+      // Get the current date and time for the comment
+      var currentDate = new Date();
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+      var formattedDateTime = currentDate.toLocaleDateString('en-US', options);
+
+      // Create the comment
+      var comment = '<div class="comment">';
+      comment += '<div class="comment-content">';
+      comment += '<div class="comment-info">' + formattedDateTime + '</div>';
+      comment += '<p><strong>Comment:</strong> ' + commentInput + '</p>';
+      comment += '</div>';
+      comment += '</div>';
+
+      // Add the comment to the post
+      var commentsContainer = button.parentNode.parentNode.querySelector('.comments');
+      commentsContainer.innerHTML += comment;
+
+      // Clear the comment input
+      button.parentNode.querySelector('.comment-input').value = '';
+    }
+  </script>
+
+
+   
+<div>
+
+
+       
+
+   
+       
+
+
+</html>
